@@ -8,6 +8,7 @@ import android.os.IBinder;
 import android.os.IIvviCoreManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.util.Log;
 
 
 import com.android.server.ivvi.IvviCoreConstant;
@@ -15,15 +16,16 @@ import com.domyos.econnected.heartRate.HeartRateService;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 
 public class BackgroundService extends Service {
 
-    IIvviCoreManager mCoreManager = IIvviCoreManager.Stub.asInterface(ServiceManager.getService("ivviCoreService"));
+   private IIvviCoreManager mCoreManager;
 
-
+    private Timer timer;
     private final IBinder mBinder = new LocalBinder();
-
-    private final static String TAG = "####guolong" + HeartRateService.class.getSimpleName();
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -44,16 +46,25 @@ public class BackgroundService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        EventBus.getDefault().register(this);
-        sendReceiver();
+        mCoreManager = IIvviCoreManager.Stub.asInterface(ServiceManager.getService("ivviCoreService"));
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                sendReceiver();
+            }
+        },0,1000);
 
+        Log.e("backgroundService","onCreate");
     }
 
     private void sendReceiver() {
 
         try {
+
             double[] data = mCoreManager.getAllResult();
             int value = (int)data[IvviCoreConstant.RESULT_ARR_INDEX_CURR_HEART_RATE];
+            Log.e("backgroundService","heart_rate=="+value);
             Intent intent = new Intent();
             intent.setAction("com.domyos.econnected.SEND_HEART_RATE");
             intent.putExtra("heart_rate", value);

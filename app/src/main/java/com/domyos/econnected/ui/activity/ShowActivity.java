@@ -43,6 +43,7 @@ import com.domyos.econnected.heartRate.HeartRateManager;
 import com.domyos.econnected.heartRate.HeartRateService;
 import com.domyos.econnected.heartRate.ScanHeartRateFragment;
 import com.domyos.econnected.receiver.HeartRateReceiver;
+import com.domyos.econnected.service.BackgroundService;
 import com.domyos.econnected.ui.BaseActivity;
 import com.domyos.econnected.ui.fragment.MultimediaFragment;
 import com.domyos.econnected.ui.fragment.RaceFragment;
@@ -94,12 +95,12 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 	ImageView equipmentImg;
 	@BindView(R.id.equipmentNameText)
 	TextView equipmentNameText;
-	@BindView(R.id.btn_heart_rate)
+/*	@BindView(R.id.btn_heart_rate)
 	LinearLayout btn_heart_rate;
 	@BindView(R.id.heart_rate)
 	ImageView heart_rate;
 	@BindView(R.id.heart_rate_text)
-	TextView heart_rate_text;
+	TextView heart_rate_text;*/
 	@BindView(R.id.language_img)
 	ImageView language_img;
 
@@ -123,7 +124,8 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 	private static EWEquipment mEwEquipment;
 	boolean isLogin;
 	private Intent heartRateIntent;
-	private HeartRateService heartRateService;
+    //private HeartRateService heartRateService;
+    private BackgroundService backgroundService;
 	private HeartRateReceiver heartRateReceiver;
 	private boolean isEnglish = false;
 	private Timer timer;
@@ -158,7 +160,7 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 		intentFilter.addAction("com.domyos.econnected.SEND_SPORT_DATA");
 		heartRateReceiver = new HeartRateReceiver();
 		registerReceiver(heartRateReceiver, intentFilter);
-		heartRateIntent = new Intent(getApplicationContext(), HeartRateService.class);
+		heartRateIntent = new Intent(getApplicationContext(), BackgroundService.class);
 		bindService(heartRateIntent, mServiceConnection, Context.BIND_AUTO_CREATE);
 		blueisenable();
 		progressDialog = new ProgressDialog(this);
@@ -197,10 +199,10 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 		}
 		//蓝牙未连接标志
 		YDApplication.getInstance().put("ble_connect", false);
-
+/*
 		btn_heart_rate.setClickable(true);
 		heart_rate.setImageResource(R.mipmap.icon_heart_rate_unconnected);
-		heart_rate_text.setText(R.string.heart_rate_bracelet);
+		heart_rate_text.setText(R.string.heart_rate_bracelet);*/
 
 	}
 
@@ -238,12 +240,12 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 	private ServiceConnection mServiceConnection = new ServiceConnection() {
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
-			heartRateService = ((HeartRateService.LocalBinder) service).getService();
+            backgroundService = ((BackgroundService.LocalBinder) service).getService();
 		}
 
 		@Override
 		public void onServiceDisconnected(ComponentName name) {
-			heartRateService = null;
+            backgroundService = null;
 		}
 	};
 
@@ -313,10 +315,10 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 				break;
 			case EquipmentEvent.ACTION_HEART_RATE_ITEM_CLICK:
 				BluetoothDevice device = event.bluetoothDevice;
-				heartRateService.connect(device.getAddress(), this);
-				heart_rate_text.setText(device.getName());
+				//heartRateService.connect(device.getAddress(), this);
+				/*heart_rate_text.setText(device.getName());
 				SharedPreferenceUtils.put(this, "heart", device.getName());
-				YDApplication.getInstance().put("heart",device.getName());
+				YDApplication.getInstance().put("heart",device.getName());*/
 				break;
 			case EquipmentEvent.ACTION_EQUIPMENT_CONNECTED:
 				SharedPreferenceUtils.put(this, "ewName", event.ewEquipment.getPeripheral().getName());
@@ -336,9 +338,9 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 		switch (event.heartRate) {
 			case HeartRateEvent.DISCONNTED_HEART_RATE:
 				YDApplication.getInstance().put("heart",null);
-				btn_heart_rate.setClickable(true);
+				/*btn_heart_rate.setClickable(true);
 				heart_rate.setImageResource(R.mipmap.icon_heart_rate_unconnected);
-				heart_rate_text.setText(R.string.heart_rate_bracelet);
+				heart_rate_text.setText(R.string.heart_rate_bracelet);*/
 				break;
 		}
 	}
@@ -485,7 +487,7 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 				}
 			}
 		}
-		String heartName = (String)YDApplication.getInstance().get("heart");
+		/*String heartName = (String)YDApplication.getInstance().get("heart");
 		if (heartName!=null) {
 			btn_heart_rate.setClickable(false);
 			heart_rate_text.setText(heartName);
@@ -495,7 +497,7 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 			heart_rate.setImageResource(R.mipmap.icon_heart_rate_unconnected);
 			heart_rate_text.setText(R.string.heart_rate_bracelet);
 
-		}
+		}*/
 
 
 	}
@@ -559,7 +561,7 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 	}
 
 
-	@OnClick({/*R.id.btn_main_map,*/ R.id.userIcon, R.id.btn_heart_rate, R.id.language_img, R.id.btn_lianjie, R.id.btn_dianbo, R.id.btn_zhibo, R.id.btn_yundong, R.id.btn_jingsai, R.id.btn_shijing})
+	@OnClick({/*R.id.btn_main_map,*/ R.id.userIcon/*, R.id.btn_heart_rate*/, R.id.language_img, R.id.btn_lianjie, R.id.btn_dianbo, R.id.btn_zhibo, R.id.btn_yundong, R.id.btn_jingsai, R.id.btn_shijing})
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.btn_dianbo:
@@ -611,9 +613,9 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
                 Intent it = new Intent(ShowActivity.this, GoogleMapDemoActivity.class);
                 startActivity(it);
                 break;*/
-			case R.id.btn_heart_rate:
+		/*	case R.id.btn_heart_rate:
 				showHeartRate();
-				break;
+				break;*/
 			case R.id.language_img:
 				if (isEnglish) {
 					isEnglish = false;
@@ -1037,9 +1039,9 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				Variable.icConnectHeart = true;
+			/*	Variable.icConnectHeart = true;
 				btn_heart_rate.setClickable(false);
-				heart_rate.setImageResource(R.mipmap.icon_heart_rate_connected);
+				heart_rate.setImageResource(R.mipmap.icon_heart_rate_connected);*/
 			}
 		});
 	}
@@ -1053,9 +1055,9 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				btn_heart_rate.setClickable(true);
+			/*	btn_heart_rate.setClickable(true);
 				heart_rate.setImageResource(R.mipmap.icon_heart_rate_unconnected);
-				heart_rate_text.setText(R.string.heart_rate_bracelet);
+				heart_rate_text.setText(R.string.heart_rate_bracelet);*/
 			}
 		});
 	}
@@ -1073,7 +1075,7 @@ public class ShowActivity extends BaseActivity implements HeartRateService.Heart
 
 		HeartRateManager.getInstance().removeAllData();
 		SharedPreferenceUtils.put(this, "heart", "");
-		btn_heart_rate.setClickable(true);
+		//btn_heart_rate.setClickable(true);
 		if (EwEquipmentManager.getInstance().isConnected()) {
 			EwEquipmentManager.getInstance().cancelData(mEwEquipment);
 			YDApplication.getInstance().put("ew_name", null);

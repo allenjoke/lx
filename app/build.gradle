@@ -93,4 +93,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:17.0.0'
     implementation 'com.google.android.gms:play-services-places:17.0.0'
     //implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation files('libs/services.jar')
 }
