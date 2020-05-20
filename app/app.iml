@@ -98,10 +98,10 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:runner:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\sh\workspace\lixuanapp\lixuanapp\app\libs\ew_bluetooth1.0.7.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\sh\workspace\lixuanapp\lixuanapp\app\libs\framework.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\sh\workspace\lixuanapp\lixuanapp\app\libs\Msc.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\sh\workspace\lixuanapp\lixuanapp\app\libs\services.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./app/libs/Msc.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./app/libs/services.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./app/libs/framework.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./app/libs/ew_bluetooth1.0.7.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-annotations:10.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0@jar" level="project" />
@@ -132,7 +132,7 @@
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-lite:3.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.auto.value:auto-value-annotations:1.6.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:D.\sh\workspace\lixuanapp\lixuanapp\app\libs\AliyunPlayer-4.7.2-full.aar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:./app/libs/AliyunPlayer-4.7.2-full.aar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.zhy:autolayout:1.4.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.0.0@aar" level="project" />

@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Econnected.iml" filepath="$PROJECT_DIR$/Econnected.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kgplayer-java/kgplayer-java.iml" filepath="$PROJECT_DIR$/kgplayer-java/kgplayer-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lixuanapp-Econnected.iml" filepath="$PROJECT_DIR$/lixuanapp-Econnected.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Econnected/app" />
+      <module fileurl="file://$PROJECT_DIR$/kgplayer-java/kgplayer-java.iml" filepath="$PROJECT_DIR$/kgplayer-java/kgplayer-java.iml" group="Econnected/kgplayer-java" />
+      <module fileurl="file://$PROJECT_DIR$/lx-Econnected.iml" filepath="$PROJECT_DIR$/lx-Econnected.iml" group="Econnected" />
     </modules>
   </component>
 </project>
