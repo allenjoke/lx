@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:clickable="true"
+    tools:context=".ui.fragment.user.LogoutFragment">
+
+    <include layout="@layout/include_homepage_title_layout" />
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userIcon_logout"
+            android:background="@drawable/touxiang_img"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/zhu" />
+
+        <TextView
+            android:id="@+id/userNameText_logout"
+            android:layout_marginTop="130px"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:text="小迪"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="35px"
+            android:gravity="center" />
+
+
+        <Button
+            android:layout_marginTop="210px"
+            android:id="@+id/btn_logout"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:textSize="20px"
+            android:text="@string/logout"
+            android:layout_gravity="bottom|center" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

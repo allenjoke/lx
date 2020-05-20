@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:clickable="true"
+    android:layout_height="140px"
+    android:orientation="vertical"
+    android:padding="2px"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/race_touxiang_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:textSize="14sp"
+        android:text="1234"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center|top"
+         />
+
+    <FrameLayout
+        android:layout_marginTop="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="center"
+            android:src="@color/white" />
+        <ImageView
+            android:id="@+id/race_touxiang_img"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_margin="3px"
+            android:layout_gravity="center"
+            android:src="@drawable/touxiang_img" />
+    </FrameLayout>
+
+</LinearLayout>

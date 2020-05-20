@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/grey_corner">
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+
+        <FrameLayout
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_width="70px"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="match_parent"
+                android:src="@color/white" />
+
+            <ImageView
+
+                android:src="@drawable/pic_02_01"
+                android:id="@+id/race_dialog_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:textSize="16sp"
+            android:text="123456"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:id="@+id/race_dialog_name"
+            android:layout_width="150px"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_marginRight="30px"
+            android:background="@drawable/red_heart_corner"
+            android:textSize="18px"
+            android:textColor="@color/white"
+            android:text="Add"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:id="@+id/race_dialog_add"
+            android:layout_width="90px"
+            android:layout_height="50px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_right">
+
+            <TextView
+                android:id="@+id/race_dialog_distance"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distance_text_unit"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_right">
+
+            <TextView
+                android:id="@+id/race_dialog_kcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calorie_text_unit"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/race_dialog_time"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time_text_unit"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="20px"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/race_dialog_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+
+</LinearLayout>

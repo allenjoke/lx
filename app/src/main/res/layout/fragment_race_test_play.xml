@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".ui.fragment.RealPlayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:id="@+id/test_image_big_01"
+            android:src="@drawable/lasi_map_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.domyos.econnected.ui.view.svg.RunWayView
+            android:id="@+id/test_view_runway"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.domyos.econnected.utils.MyVideoView
+            android:id="@+id/test_videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/test_one_frameLayout"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/test_image_big"
+            android:src="@drawable/lasi_map_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="140px"
+        android:layout_width="260px"
+        android:layout_height="70px">
+
+        <FrameLayout
+            android:background="@drawable/grey_corner_white"
+            android:layout_weight="1"
+            android:layout_margin="5px"
+            android:id="@+id/test_race_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/running_distance"
+                android:layout_margin="10px"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:background="@drawable/grey_corner"
+            android:layout_weight="1"
+            android:layout_margin="5px"
+            android:id="@+id/test_race_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10px"
+
+                android:src="@drawable/running_time"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:background="@drawable/grey_corner"
+            android:layout_weight="1"
+            android:layout_margin="5px"
+
+            android:id="@+id/test_race_cal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/runnig_kcal"
+                android:layout_weight="1"
+                android:layout_margin="10px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:background="@drawable/grey_corner"
+            android:layout_weight="1"
+            android:layout_margin="5px"
+            android:id="@+id/test_race_dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10px"
+                android:src="@drawable/icon_juli"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_marginTop="220px"
+        android:layout_marginLeft="10px"
+        android:id="@+id/test_raceListView"
+        android:layout_width="250px"
+        android:divider="#00000000"
+        android:dividerHeight="15px"
+        android:scrollbars="none"
+        android:layout_marginBottom="60px"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/live_top_running" />
+
+</FrameLayout>

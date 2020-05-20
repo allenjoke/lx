@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/bg_mian">
+
+    <include
+        layout="@layout/include_register_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80px">
+
+        <TextView
+            android:id="@+id/step1_txt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择验证方式  >"
+            android:textColor="#a2a3a3" />
+
+        <TextView
+            android:id="@+id/step2_txt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  安全验证  >"
+            android:textColor="#a2a3a3" />
+
+        <TextView
+            android:id="@+id/step3_txt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  找回登录密码"
+            android:textColor="#a2a3a3" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="140px"
+        android:layout_marginRight="30px"
+        android:background="@color/white">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:background="@color/yellow"
+            android:layout_margin="10px"
+            android:text="立即验证" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:text="短信"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+    </FrameLayout>
+
+</RelativeLayout>

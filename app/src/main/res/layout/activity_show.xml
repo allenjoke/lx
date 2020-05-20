@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.ShowActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/running_back_land" />
+
+
+    <FrameLayout
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@color/white"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:src="@drawable/touxiang_img"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_lianjie"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="50px"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/equipmentImg"
+            android:src="@drawable/icon_bluetooth_off"
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15px" />
+
+        <TextView
+            android:id="@+id/equipmentNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_device"
+            android:textColor="@color/white"
+            android:textSize="25px"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_marginTop="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25px"
+        android:layout_marginLeft="140px"
+        android:gravity="center" />
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="290px">
+
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/btn_yundong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/icon_home_sport"
+                android:layout_width="220px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15px"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:text="@string/main_sport_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_item_bg_selector" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/btn_shijing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/icon_home_real"
+                android:layout_width="220px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15px"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:text="@string/main_shijing_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_item_bg_selector" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/btn_jingsai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/icon_home_race"
+                android:layout_width="220px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15px"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:text="@string/main_jingsai_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_item_bg_selector" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/btn_dianbo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/icon_home_course"
+                android:layout_width="220px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15px"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:text="@string/main_dianbo_text" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/btn_main_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@mipmap/main_map"
+                android:layout_width="220px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15px"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:text="@string/main_map_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_item_bg_selector" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/btn_zhibo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@mipmap/main_youtube"
+                android:layout_width="220px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15px"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:text="@string/main_zhibo_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_item_bg_selector" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="50px"
+        android:layout_gravity="left|bottom"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_item_bg_selector"
+        >
+
+        <ImageView
+            android:id="@+id/language_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/ch" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/heart_rate"
+            android:src="@mipmap/icon_heart_rate_unconnected"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:padding="3px"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15px" />
+
+
+        <TextView
+            android:id="@+id/heart_rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heart_rate_bracelet"
+            android:textColor="@color/white"
+            android:textSize="25px"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/dengluFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/bofangFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/yundongFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/jingsaiFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shijingFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</FrameLayout>

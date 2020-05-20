@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".ui.fragment.ZhiBoShowFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        >
+    </SurfaceView>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:layout_width="50px"
+        android:layout_height="50px"/>
+    <include layout="@layout/live_top_running" />
+   <!-- <Button
+        android:text="stop"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20px"
+        android:id="@+id/show_btn"
+        android:layout_width="200px"
+        android:layout_height="wrap_content" />-->
+
+</FrameLayout>

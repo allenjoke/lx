@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@mipmap/running_back_land"
+
+    tools:context=".ui.fragment.VideoListFragment">
+
+    <include layout="@layout/top_bar" />
+    <LinearLayout
+        android:layout_marginTop="130px"
+        android:background="#80ABABAB"
+        android:layout_width="match_parent"
+        android:layout_height="220px">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_width="match_parent"
+        android:layout_marginTop="150px"
+        android:layout_height="500px">
+
+
+       <!-- <LinearLayout
+            android:id="@+id/list_01"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="30px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/item_01" />
+
+            <LinearLayout
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:gravity="center"
+                    android:text="@string/video_item_01_title"
+                    android:textColor="@color/white"
+                    android:textSize="38px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="8px"
+                    android:textColor="@color/white"
+                    android:textSize="28px"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_item_01_des" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="28px"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_item_01_cocah" />
+
+
+                <Button
+
+                    android:id="@+id/list_01_btn"
+                    android:layout_marginTop="55px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:background="@drawable/yellow_shape_corner"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:textSize="24px"
+                    android:text="@string/video_item_01_guankan" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/list_02"
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:src="@drawable/item_02" />
+
+            <LinearLayout
+                android:layout_marginLeft="55px"
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="40px"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/video_item_02_title"
+                    android:textSize="38px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="8px"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/video_item_02_des"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/video_item_02_cocah"
+                    android:textSize="28px" />
+
+
+                <Button
+                    android:id="@+id/list_02_btn"
+                    android:layout_marginTop="55px"
+                    android:layout_marginRight="50px"
+                    android:text="@string/video_item_01_guankan"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_height="60px"
+                    android:layout_width="match_parent"
+                    android:textSize="30px"
+                    android:background="@drawable/yellow_shape_corner" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_03"
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="30px"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:src="@drawable/item_03" />
+
+            <LinearLayout
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="20px"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="40px"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/video_item_03_title"
+                    android:textSize="38px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="8px"
+                    android:textColor="@color/white"
+                    android:textSize="28px"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_item_03_des" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="28px"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_item_03_cocah" />
+
+
+                <Button
+                    android:id="@+id/list_03_btn"
+                    android:layout_marginTop="55px"
+                    android:layout_marginRight="50px"
+                    android:text="@string/video_item_01_guankan"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:textSize="30px"
+                    android:background="@drawable/yellow_shape_corner" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/showView_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/selectorEquipment_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

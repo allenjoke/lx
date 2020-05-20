@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70px">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_register_close"
+            android:layout_marginLeft="20px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/black_right_arrow"
+            android:rotation="180"
+            android:layout_margin="5px"
+            android:layout_width="30px"
+            android:layout_height="30px" />
+
+        <TextView
+            android:id="@+id/img_register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户登录"
+            android:textSize="22px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

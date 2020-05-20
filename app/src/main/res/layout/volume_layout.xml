@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/volumeDown"
+        android:clickable="true"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:src="@drawable/volume_down_selector"
+        />
+
+   <SeekBar
+       android:id="@+id/volumeSeekBar"
+       android:layout_width="900px"
+       android:layout_height="50px"
+       android:progressTint="@color/grey_little"
+       android:maxHeight="10px"
+       android:minHeight="10px"
+       android:max="12"
+       android:min="0"
+       android:thumb="@drawable/yellow_circle"
+       android:progress="6"
+       />
+
+    <ImageView
+        android:id="@+id/volumeUp"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:src="@drawable/volume_up_selector"
+        />
+</LinearLayout>

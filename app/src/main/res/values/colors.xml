@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent_80">#88ffffff</color>
+    <color name="imageview_selector">#80000000</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#fcff00</color>
+    <color name="grey">#c3c3c3</color>
+    <color name="blue">#00ACED</color>
+    <color name="brown">#F6921E</color>
+    <color name="green">#BAC53E</color>
+    <color name="red">#EB1C23</color>
+
+    <color name="grey_little_seekbar">#9f9e9e</color>
+
+    <color name="alivc_player_theme_blue">#379DF2</color>
+    <color name="alivc_player_theme_green">#57AB44</color>
+    <color name="alivc_player_theme_orange">#EE7C33</color>
+    <color name="alivc_player_theme_red">#E94033</color>
+
+    <color name="alivc_player_bg_action_list_dialog">#1e2321</color>
+    <color name="alivc_player_bg_barrage_switch">#80D8D8D8</color>
+    <color name="alivc_player_font_info_duration">#9f9e9e</color>
+    <color name="grey_little">#9f9e9e</color>
+    <color name="text_main_blue">#FF3AB4FA</color>
+
+
+</resources>

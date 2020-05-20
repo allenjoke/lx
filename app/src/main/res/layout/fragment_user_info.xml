@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="@mipmap/running_back_land"
+    tools:context=".ui.fragment.user.UserInfoFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff">
+
+        <ImageView
+            android:id="@+id/userInfo_back"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:rotation="180"
+            android:src="@drawable/black_right_arrow" />
+
+        <TextView
+            android:id="@+id/userInfo_logout"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:text="@string/logout" />
+
+
+        <LinearLayout
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="100px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/userInfo_pic"
+                android:layout_width="400px"
+                android:src="@drawable/pic_01_03_big"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30px"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="@string/userinfo_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/userInfo_name"
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="测试01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5px"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/userinfo_age"
+                            android:textColor="@color/black"
+                            android:textSize="34px" />
+                        <TextView
+                            android:id="@+id/userInfo_age"
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5px"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="@string/userinfo_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/userInfo_height"
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="173"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="5px"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="@string/userinfo_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/userInfo_weight"
+                            android:textColor="@color/black"
+                            android:textSize="34px"
+                            android:text="70"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_marginRight="70px"
+                    android:layout_marginTop="260px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="@string/userinfo_stat"
+                        android:textColor="@color/black"
+                        android:textSize="30px"
+                        android:layout_marginLeft="10px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:background="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginRight="20px"
+                        android:layout_marginTop="40px"
+                        />
+
+                  <androidx.viewpager.widget.ViewPager
+                      android:id="@+id/userInfo_ViewPager"
+                      android:layout_marginBottom="120px"
+                      android:layout_marginTop="50px"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/userInfo_TabLayout"
+                        android:layout_marginBottom="50px"
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        app:tabIndicatorColor="@color/black"
+                        android:layout_height="50px"/>
+
+                </FrameLayout>
+                
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/setPage_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

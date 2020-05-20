@@ -1,0 +1,167 @@
+<resources>
+
+    <string name="blank_fragment">Hello blank fragment</string>
+    <string name="no_coarse_location_permission">Coarse_location usage is not permitted, please open first</string>
+    <string name="no_fine_location_permission">Fine_location is not permitted to record, please open first</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_camera_permission">Camera usage is not permitted, please open first</string>
+    <string name="no_record_bluetooth_permission">Bluetooth is not permitted to record, please open first</string>
+    <string name="no_record_audio_permission">Audio is not permitted to record, please open first</string>
+    <string name="no_read_phone_state_permission">Phone state is not permitted to read, please opend first</string>
+    <string name="no_write_external_storage_permission">External storage is not permitted to write, please open first</string>
+    <string name="no_read_external_storage_permission">External storage is not permitted to read, please open first</string>
+    <string name="alivc_player_settings_title">Playback Settings</string>
+    <string name="alivc_error_msg">Error message</string>
+    <string name="alivc_error_code">Error code:</string>
+    <string name="alivc_retry">Retry</string>
+    <string name="net_error_message">Please check the internet connection. </string>
+
+    <string name="running_distance">DISTANCE</string>
+    <string name="running_time">TIME</string>
+    <string name="running_kcal">KCAL</string>
+    <string name="running_incline">INCLINE</string>
+    <string name="running_bmp">BMP</string>
+    <string name="running_speed">SPEED</string>
+    <string name="running_huqugeren">For personal</string>
+    <string name="running_baogao">Physical test report/Training program</string>
+    <string name="main_sport_text">Sport</string>
+    <string name="main_shijing_text">Scenery</string>
+    <string name="yilianjie_shebei">Connected</string>
+    <string name="main_jingsai_text">Multiplayer</string>
+    <string name="main_dianbo_text">Course</string>
+    <string name="main_zhibo_text">YouTube</string>
+    <string name="main_multimedia_text">Multimedia</string>
+    <string name="main_lianjie_text">connect</string>
+    <string name="video_item_01_title">Treadmill training</string>
+    <string name="video_item_01_cocah">coach：Decathlon</string>
+    <string name="video_item_01_des">Elementary 408k</string>
+    <string name="video_item_01_guankan">WATCH</string>
+    <string name="video_item_02_title">Fitness bike</string>
+    <string name="video_item_02_cocah">coach：Decathlon</string>
+    <string name="video_item_02_des">Elementary 408k</string>
+    <string name="video_item_03_title">Elliptical machine</string>
+    <string name="video_item_03_cocah">coach：Decathlon</string>
+    <string name="video_item_03_des">Elementary 408k</string>
+    <string name="logout">logout</string>
+    <string name="my_device">Devices</string>
+    <string name="disconnect_device">Device disconnected</string>
+    <string name="heart_rate_bracelet">Heart rate bracelet</string>
+    <string name="guojiagongyuan">Arizona national park</string>
+    <string name="lasiweijiasi">Las Vegas street view</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm">Confirm</string>
+    <string name="distance_text_unit">Distance km</string>
+    <string name="calorie_text_unit">Calorie kcal </string>
+    <string name="time_text_unit">Time min</string>
+    <string name="incline_text_unit">Incline %</string>
+    <string name="speed_text_unit">Speed km/h</string>
+    <string name="rpm_text_unit">rpm</string>
+    <string name="app_name">Econnected_Lx</string>
+
+    <!-- 合成 -->
+    <string name="tts_toast_format" formatted="false" translatable="false">缓冲进度为%d%%，播放进度为%d%%</string>
+    <string name="live_action">实景人物</string>
+    <string name="virtual_scene">虚拟场景</string>
+    <string name="login_name_hint">用户名/邮箱/手机号</string>
+    <string name="password">登录密码</string>
+    <string name="enter_user_name">输入用户名</string>
+    <string name="enter_passwork">输入密码</string>
+    <string name="running_avg_bpm">平均心率</string>
+    <string name="running_max_bpm">最大心率</string>
+    <string name="running_warm_up">热身</string>
+    <string name="running_5_min">0</string>
+    <string name="running_fat_burn">燃脂</string>
+    <string name="running_3_min">0</string>
+    <string name="running_4_min">0</string>
+    <string name="running_1_min">0</string>
+    <string name="running_20_min">0</string>
+    <string name="running_aerobic">有氧耐力</string>
+    <string name="running_anaerobic">无氧耐力</string>
+    <string name="running_limit">极限</string>
+    <string name="zhibo_item01">新手指导跑</string>
+    <string name="zhibo_item02">迪卡侬变速跑</string>
+    <string name="zhibo_item03">燃脂椭圆机</string>
+    <string name="zhibo_item04">动感单车</string>
+    <string name="zhibo_yuyue">立即预约</string>
+    <string name="userinfo_username">用户名：</string>
+    <string name="userinfo_age">年龄：</string>
+    <string name="userinfo_height">身高：</string>
+    <string name="userinfo_weight">体重：</string>
+    <string name="userinfo_stat">累计运动信息</string>
+    <string name="userinfo_sport_week">累计运动(周)</string>
+    <string name="userinfo_sport_month">累计运动(月)</string>
+    <string name="userinfo_sport_year">累计运动(年)</string>
+    <string name="your_height">您的身高 </string>
+    <string name="select_your_weight">您的体重 </string>
+    <string name="please_select_your_birthday">您的年龄 </string>
+    <string name="user_clothes_save">保存</string>
+    <string name="user_clothes_coat">上衣</string>
+    <string name="user_clothes_pants">裤子</string>
+    <string name="reconnect">设备断开，重新连接</string>
+    <string name="running_curr">当前心率</string>
+    <string name="heart_warmup">热身</string>
+    <string name="heart_fatburm">燃脂</string>
+    <string name="heart_youyang">耐力</string>
+    <string name="heart_wuyang">无氧</string>
+    <string name="heart_limit">极限</string>
+    <string name="heart_no">加油</string>
+    <string name="search_here">Search here</string>
+    <string name="planning_the_route_string">计划的路线：</string>
+    <string name="determine_the_exits">确定退出</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+    <string name="confirm_end">退出地图模式运动</string>
+    <string name="go">继续</string>
+    <string name="start_capital">开始</string>
+    <string name="confirm_distance">提示：</string>
+    <string name="waiting">Waiting</string>
+    <string name="main_map_text">地图</string>
+    <string name="dis_device">断开设备</string>
+    <string name="netflix_txt">NetFlix</string>
+    <string name="hulu_txt">HuLu</string>
+    <string name="amazonprime_txt">PrimeVideo</string>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕</item>
+        <item>小峰</item>
+
+    </string-array>
+
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+
+    </string-array>
+    <string-array name="voicer_local_entries">
+        <item>小燕</item>
+        <item>小峰</item>
+    </string-array>
+    <string-array name="voicer_local_values">
+        <item>xiaoyan</item>
+        <item>xiaofeng</item>
+    </string-array>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>

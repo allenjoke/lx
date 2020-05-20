@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@mipmap/running_back_land"
+    tools:context=".ui.fragment.user.UserClothesFragment">
+
+    <FrameLayout
+        android:background="#70ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/userClothes_back"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="20px"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:rotation="180"
+            android:src="@drawable/black_right_arrow" />
+
+
+    <TextView
+        android:id="@+id/userClothes_confirm"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:text="@string/user_clothes_save" />
+
+    <ImageView
+        android:id="@+id/userClothes"
+        android:layout_marginLeft="30px"
+        android:layout_width="430px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="60px"
+        android:src="@drawable/pic_01_03_big"
+
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="480px"
+        android:layout_marginBottom="30px"
+        >
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="26px"
+                android:layout_marginLeft="10px"
+                android:text="@string/user_clothes_coat"
+                />
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="35px"
+                />
+            <LinearLayout
+                android:layout_marginRight="20px"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userClothes_jacket01"
+                    android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jacket_01"
+                />
+                <ImageView
+                    android:id="@+id/userClothes_jacket02"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/jacket_02"
+                    />
+                <ImageView
+                    android:id="@+id/userClothes_jacket03"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/jacket_03"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="26px"
+                android:layout_marginLeft="10px"
+                android:text="@string/user_clothes_pants"
+                />
+            <View
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="35px"
+                />
+            <LinearLayout
+                android:layout_marginRight="20px"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userClothes_pants01"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pants_01"
+                    />
+                <ImageView
+                    android:id="@+id/userClothes_pants02"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pants_02"
+                    />
+                <ImageView
+                    android:id="@+id/userClothes_pants03"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pants_03"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>
+
+
+
+
+
+
+</FrameLayout>

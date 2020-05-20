@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70px"
+    xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="gone"
+        android:id="@+id/homePage_tuoxiang"
+        circleimageview:civ_border_color="#95BCD2EE"
+        circleimageview:civ_border_overlay="true"
+        circleimageview:civ_border_width="2dp"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/touxiang_img"
+        android:layout_marginLeft="20px" />
+
+    <ImageView
+        android:id="@+id/homePage_back"
+        android:layout_width="120px"
+        android:layout_height="match_parent"
+        android:paddingTop="8px"
+        android:layout_marginBottom="8px"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/white_left_arrow" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECONNECTED"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="120px"
+        android:textSize="25px"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/selector_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运动设备"
+        android:textColor="@color/yellow"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="40px"
+        android:textSize="20px" />
+
+    <ImageView
+        android:id="@+id/refresh_img"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_gravity="center_vertical|right"
+        android:src="@drawable/update_logo"
+        android:layout_marginRight="40px"
+        android:visibility="gone" />
+
+
+</FrameLayout>

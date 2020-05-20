@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- horizontal picker -->
+    <declare-styleable name="HorizontalPicker">
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="values" format="reference"/>
+        <attr name="android:ellipsize"/>
+        <attr name="android:marqueeRepeatLimit"/>
+        <attr name="dividerSize" format="dimension"/>
+        <attr name="sideItems" format="integer"/>
+    </declare-styleable>
+
+    <attr name="horizontalPickerStyle" format="reference"/>
+
+    <!-- ruler view -->
+    <declare-styleable name="RulerView">
+        <attr name="indicateColor" format="color|reference"/>
+        <attr name="selectedColor" format="color|reference"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension|reference"></attr>
+        <attr name="begin" format="integer|reference"/>
+        <attr name="end" format="integer|reference"/>
+        <attr name="indicateWidth" format="dimension|reference"/>
+        <attr name="indicatePadding" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageview">
+        <attr name="viewtype" format="enum">
+            <enum name="circle" value="1"/>
+            <enum name="round" value="2"/>
+            <enum name="roundtop" value="3"/>
+            <enum name="round_bottom" value="4"/>
+        </attr>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

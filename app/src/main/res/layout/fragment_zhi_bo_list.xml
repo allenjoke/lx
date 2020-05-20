@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@mipmap/running_back_land"
+    tools:context=".ui.fragment.ZhiBoListFragment">
+
+    <include layout="@layout/top_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120px"
+        android:layout_marginBottom="70px"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_gravity="left"
+            android:layout_width="600px"
+            android:layout_height="match_parent"
+            android:src="@drawable/scene_38"
+            android:layout_marginLeft="40px" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:layout_width="600px"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fragment_01"
+                android:background="@drawable/yellow_bg"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="90px">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="2019/12/20"
+                        android:textSize="24px"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="09:00"
+                        android:layout_weight="1"
+                        android:textSize="30px"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/zhibo_item01"
+                    android:layout_marginRight="10px"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/zhibo_btn_01"
+                    android:layout_width="120px"
+                    android:layout_height="50px"
+                    android:textSize="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/white_shape_corner"
+                    android:text="@string/zhibo_yuyue" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_02"
+                android:background="@drawable/grey_bg"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="90px">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="2019/12/20"
+                        android:layout_weight="1"
+                        android:textSize="24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="13:00"
+                        android:layout_weight="1"
+                        android:textSize="30px"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/zhibo_item02"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:layout_marginRight="10px"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/zhibo_btn_02"
+                    android:layout_width="120px"
+                    android:layout_height="50px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/white_shape_corner"
+                    android:text="@string/zhibo_yuyue"
+                    android:textSize="18px" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_03"
+                android:background="@drawable/grey_bg"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="90px">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="2019/12/20"
+                        android:layout_weight="1"
+                        android:textSize="24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="18:00"
+                        android:layout_weight="1"
+                        android:textSize="30px"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/zhibo_item03"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:layout_marginRight="10px"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/zhibo_btn_03"
+                    android:layout_width="120px"
+                    android:layout_height="50px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/white_shape_corner"
+                    android:text="@string/zhibo_yuyue"
+                    android:textSize="18px" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_04"
+                android:background="@drawable/grey_bg"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="match_parent"
+                android:layout_height="90px">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="2019/12/20"
+                        android:layout_weight="1"
+                        android:textSize="24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="20:00"
+                        android:layout_weight="1"
+                        android:textSize="30px"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/zhibo_item04"
+                    android:layout_marginRight="10px"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/zhibo_btn_04"
+                    android:layout_width="120px"
+                    android:layout_height="50px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/white_shape_corner"
+                    android:text="@string/zhibo_yuyue"
+                    android:textSize="18px" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/zhibo_play_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/selectorEquipment_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

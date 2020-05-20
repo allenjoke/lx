@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="@mipmap/running_back_land"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="70px">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20px">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13px"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/heart_img"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:src="@mipmap/icon_heart_rate_unconnected" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/running_bmp"
+                        android:textSize="18px"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/running_avg_bpm"
+                        android:textSize="20px"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/running_avg_bom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="000"
+                        android:textColor="@color/white"
+                        android:textSize="50px"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="40px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20px"
+                        android:text="@string/running_max_bpm"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/running_max_bpm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:textColor="@color/white"
+                        android:textSize="50px"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80px"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20px"
+                        android:text="@string/running_curr"
+                        android:textColor="@color/white" />
+                    <TextView
+                        android:id="@+id/running_bmp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:textColor="@color/white"
+                        android:textSize="50px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+            <com.domyos.econnected.ui.view.HeartRateLineChartView
+                android:id="@+id/view_heart_rate"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_gravity="center"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px" />
+
+
+
+            <LinearLayout
+                android:layout_marginLeft="80px"
+                android:layout_marginRight="20px"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30px"
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <LinearLayout
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:background="@drawable/blue_heart_corner"
+                        android:textSize="20px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="3px"
+                        android:textColor="@color/white"
+                        android:text="@string/running_warm_up"
+                        android:textSize="18px"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/blue_text"
+                        android:layout_marginTop="5px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/running_5_min"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/green_heart_corner"
+                        android:textColor="@color/white"
+                        android:textSize="20px" />
+                    <TextView
+                        android:layout_marginTop="3px"
+                        android:textColor="@color/white"
+                        android:text="@string/running_fat_burn"
+                        android:textSize="18px"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/green_text"
+                        android:layout_marginTop="5px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/running_3_min"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="9px"
+                    android:layout_marginLeft="9px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:background="@drawable/yellow_heart_corner"
+                        android:textSize="20px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3px"
+                        android:gravity="center"
+                        android:text="@string/running_aerobic"
+                        android:textColor="@color/white"
+                        android:textSize="17px" />
+
+                    <TextView
+                        android:id="@+id/yellow_text"
+                        android:layout_marginTop="5px"
+                        android:textColor="@color/white"
+                        android:text="@string/running_20_min"
+                        android:textSize="24px"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="9px"
+                    android:layout_marginLeft="9px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/brown_heart_corner"
+                        android:textColor="@color/white"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3px"
+                        android:gravity="center"
+                        android:text="@string/running_anaerobic"
+                        android:textColor="@color/white"
+                        android:textSize="17px" />
+                    <TextView
+                        android:id="@+id/brown_text"
+                        android:layout_marginTop="5px"
+                        android:textColor="@color/white"
+                        android:text="@string/running_1_min"
+                        android:textSize="24px"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/red_heart_corner"
+                        android:textColor="@color/white"
+                        android:textSize="20px" />
+                    <TextView
+                        android:layout_marginTop="3px"
+                        android:textColor="@color/white"
+                        android:text="@string/running_limit"
+                        android:textSize="18px"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/red_text"
+                        android:layout_marginTop="5px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/running_4_min"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_marginTop="60px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="(min)"
+                    android:textColor="@color/white"
+                    android:textSize="18px" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="80px"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="20px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_marginRight="15px"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10px">
+
+
+                        <LinearLayout
+                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/running_time"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="20px"
+                                android:src="@drawable/running_time" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="20px"
+                                android:text="@string/running_time"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="8px"
+                                android:textSize="20px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/running_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="00:00"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/border_top_bottom"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10px">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/running_speed"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40px"
+                                android:layout_height="40px"
+                                android:layout_gravity="center"
+                                android:src="@drawable/running_speed" />
+
+                            <TextView
+                                android:layout_marginTop="8px"
+                                android:textSize="20px"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:text="@string/speed_text_unit" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/running_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0.0"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10px">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/running_distance"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5px"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40px"
+                                android:layout_height="40px"
+                                android:layout_gravity="center"
+                                android:src="@drawable/running_distance" />
+
+                            <TextView
+                                android:layout_marginTop="8px"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/distance_text_unit"
+                                android:textColor="@color/white"
+                                android:textSize="20px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/running_distance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/incline_layout"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10px"
+                        android:visibility="gone"
+                        >
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/running_incline"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40px"
+                                android:layout_height="40px"
+                                android:src="@drawable/running_incline"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/running_incline"
+                                android:textColor="@color/white"
+                                android:textSize="20px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/running_incline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="60px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10px">
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/running_kcal"
+                            android:layout_marginTop="5px"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40px"
+                                android:layout_height="40px"
+                                android:src="@drawable/runnig_kcal"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_marginTop="8px"
+                                android:textSize="20px"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:text="@string/calorie_text_unit" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/running_kcal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/rpm_layout"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10px">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/running_rpm"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/incline_"
+                                android:layout_width="40px"
+                                android:layout_height="40px"
+                                android:src="@mipmap/icon_running_rpm"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_marginTop="8px"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/rpm_text_unit"
+                                android:textColor="@color/white"
+                                android:textSize="20px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/running_rpm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/running_state"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/running_pause"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:src="@drawable/pause_running"
+                        android:layout_marginRight="15px"
+                        android:layout_marginLeft="15px" />
+
+                    <ImageView
+                        android:id="@+id/start_running"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginRight="15px"
+                        android:layout_marginLeft="15px"
+                        android:src="@drawable/start_running"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/running_stop"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:src="@drawable/stop_running"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/running_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="200px"
+                    android:layout_marginBottom="130px">
+
+                    <ImageView
+                        android:layout_width="40px"
+                        android:layout_height="45px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/running_report_img" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/running_huqugeren"
+                            android:textColor="@color/black"
+                            android:textSize="15px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/running_baogao"
+                            android:textColor="@color/black"
+                            android:textSize="15px" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/selectorEquipment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/mCountNumberText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="3"
+        android:clickable="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="-70px"
+        android:textSize="180dp"
+        android:visibility="gone" />
+</FrameLayout>

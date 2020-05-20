@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mian"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/mVideoFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/mVolShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150px"
+            android:layout_marginBottom="80px" />
+
+        <com.domyos.econnected.ui.view.CustomVideoView
+            android:id="@+id/mVideoView"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+             />
+
+        <LinearLayout
+            android:id="@+id/mViewVideo_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="70px"
+            android:background="#50000000">
+
+            <FrameLayout
+                android:id="@+id/mPlayImageView"
+                android:layout_width="60px"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mPlay_img"
+                    android:layout_gravity="center"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:src="@drawable/video_player_start"
+                    />
+            </FrameLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/mVideoTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="6px"
+                android:textSize="18px" />
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <SeekBar
+                    android:id="@+id/mVideoProgressSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="11"
+                    android:maxHeight="10px"
+                    android:minHeight="10px"
+                    android:paddingStart="10px"
+                    android:paddingEnd="10px"
+                    android:progress="100"
+                    android:thumbOffset="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/bg_adjust_seek_bar"
+                    />
+
+            </FrameLayout>
+
+
+
+            <TextView
+                android:id="@+id/mVideoTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00"
+                android:gravity="center"
+                android:layout_marginLeft="6px"
+                android:layout_marginRight="10px"
+                android:textColor="@color/white"
+                android:textSize="18px" />
+
+
+            <FrameLayout
+                android:id="@+id/playVideo_vol"
+                android:layout_width="50px"
+                android:layout_height="match_parent">
+                <ImageView
+                   android:layout_gravity="center"
+                    android:layout_width="50px"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/seekbar_circle" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <include
+            android:id="@+id/volumeLayout"
+            layout="@layout/volume_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_marginTop="150px"
+            android:layout_centerHorizontal="true"
+           android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/live_top_running"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+   <!-- <ImageView
+        android:id="@+id/img_stop_player"
+        android:layout_width="40px"
+        android:layout_height="30px"
+        android:layout_marginTop="10px"
+        android:src="@drawable/icon_back"
+        android:visibility="visible" />-->
+
+</RelativeLayout>

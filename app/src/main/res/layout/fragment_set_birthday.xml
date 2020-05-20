@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/userClothes_back"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:rotation="180"
+        android:src="@drawable/black_right_arrow" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="35px"
+        android:textColor="#ff2a2a2a"
+        android:text="@string/please_select_your_birthday"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="117px"
+        android:layout_height="wrap_content" />
+
+    <com.domyos.econnected.ui.view.HorizontalPicker
+        android:id="@+id/mYearPicker"
+        android:layout_width="match_parent"
+        app:sideItems="2"
+        android:textColor="@color/text_main_blue"
+        android:layout_marginTop="202px"
+        android:textSize="60px"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="50px"
+        android:src="@drawable/zhuce_shengri_fenge_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="261px"
+        android:layout_height="40px" />
+
+    <com.domyos.econnected.ui.view.HorizontalPicker
+        android:id="@+id/mMonthPicker"
+        android:layout_width="match_parent"
+        app:sideItems="2"
+        android:layout_marginTop="312px"
+        android:textColor="@color/text_main_blue"
+        android:textSize="60px"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="50px"
+        android:src="@drawable/zhuce_shengri_fenge_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="371px"
+        android:layout_height="40px" />
+
+    <com.domyos.econnected.ui.view.HorizontalPicker
+        android:id="@+id/mDayPicker"
+        android:layout_width="match_parent"
+        app:sideItems="2"
+        android:textColor="@color/text_main_blue"
+        android:layout_marginTop="422px"
+        android:textSize="60px"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

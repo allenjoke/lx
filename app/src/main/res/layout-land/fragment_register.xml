@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@mipmap/running_back_land">
+
+    <include layout="@layout/include_homepage_title_layout" />
+
+
+    <LinearLayout
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="120px"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:paddingLeft="10px"
+            android:id="@+id/user_name"
+            android:layout_width="500px"
+            android:layout_height="70px"
+            android:background="@drawable/white_shape_corner"
+            android:hint="@string/enter_user_name"
+            android:textSize="22px" />
+
+
+        <EditText
+            android:paddingLeft="10px"
+            android:id="@+id/user_ps"
+            android:layout_marginTop="30px"
+            android:layout_width="500px"
+            android:layout_height="70px"
+            android:inputType="textPassword"
+            android:background="@drawable/white_shape_corner"
+            android:hint="@string/enter_passwork"
+            android:textSize="22px" />
+
+        <EditText
+            android:id="@+id/user_confirm_ps"
+            android:layout_marginTop="30px"
+            android:layout_width="500px"
+            android:layout_height="70px"
+            android:paddingLeft="10px"
+            android:hint="@string/enter_passwork"
+            android:inputType="textPassword"
+            android:textSize="22px"
+            android:background="@drawable/white_shape_corner" />
+
+        <Button
+            android:id="@+id/user_confirm"
+            android:layout_width="500px"
+            android:layout_height="70px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/yellow_shape_corner"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/black"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+
+    <!--
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="80px"
+            >
+
+            <TextView
+                android:id="@+id/step1_txt"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.输入手机号  >"
+                android:textColor="#a2a3a3"
+                />
+            <TextView
+                android:id="@+id/step2_txt"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2.输入验证码  >"
+                android:textColor="#a2a3a3"
+                />
+            <TextView
+                android:id="@+id/step3_txt"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 3.设置密码"
+                android:textColor="#a2a3a3"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18px"
+            android:textColor="@color/black"
+            android:layout_marginTop="140px"
+            android:layout_centerHorizontal="true"
+            android:text="验证码已经发送177"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="200px"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="60px">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请输入短信中的验证码"
+                    android:textSize="22px"
+                    android:textColor="@color/black"
+                    android:background="@null"
+                    />
+            </FrameLayout>
+
+
+            <Button
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:text="提交验证码"
+                android:background="@color/yellow"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    -->
+
+
+</LinearLayout>

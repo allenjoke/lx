@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@mipmap/running_back_land">
+
+    <include layout="@layout/include_homepage_title_layout" />
+
+    <ListView
+        android:layout_marginTop="80px"
+        android:id="@+id/equipmentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/equipmentProgressBar"
+        android:layout_width="70px"
+        android:layout_height="70px"/>
+
+</FrameLayout>

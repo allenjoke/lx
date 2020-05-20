@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <FrameLayout
+            android:id="@+id/streetViewPanorama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:name="com.google.android.gms.maps.SupportStreetViewPanoramaFragment" />
+
+        <FrameLayout
+
+            android:id="@+id/mMapViewFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:visibility="visible">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/mSearchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="90dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/search_bg"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/mKeyWordsEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="@string/search_here"
+                android:textColorHint="@color/white"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/mSearchButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10px"
+                android:background="@null"
+                android:src="@drawable/btn_search_map" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/mResetButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:src="@drawable/btn_refresh_map" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mMapTypeBaseButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:src="@drawable/btn_map_base_selector" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/mMapTypeSatelliteButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:src="@drawable/btn_map_satellite_selector" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+         <!--   <ImageButton
+                android:id="@+id/mMapType3DButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:src="@drawable/btn_map_3d_selector" />-->
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/live_top_running" />
+
+</FrameLayout>
